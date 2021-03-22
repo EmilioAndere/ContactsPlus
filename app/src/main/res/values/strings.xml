@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Contact_Plus</string>
+    <string name="name">Emilio Andere</string>
+    <string name="btn_llamar">Llamar</string>
+    <string name="btn_mail">E-mail</string>
+    <string name="btn_New">Agregar Contacto</string>
+</resources>
