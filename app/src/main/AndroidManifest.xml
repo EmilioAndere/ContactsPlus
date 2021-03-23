@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.upt.contact_plus">
-    <uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
 
     <application
         android:allowBackup="true"
@@ -11,7 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Contact_Plus"
         android:usesCleartextTraffic="true">
-        <activity android:name=".action"></activity>
+        <activity android:name=".searchContact"></activity>
+        <activity android:name=".action" />
         <activity android:name=".newContact" />
         <activity android:name=".MainActivity">
             <intent-filter>
@@ -21,7 +21,8 @@
             </intent-filter>
         </activity>
     </application>
-
     <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
 </manifest>

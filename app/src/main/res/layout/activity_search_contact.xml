@@ -2,9 +2,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btnEditar"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".newContact">
+    tools:context=".searchContact">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -30,7 +31,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="50dp"
                 android:gravity="center_horizontal|center_vertical"
-                android:text="Nuevo Contacto"
+                android:text="Editar Contacto"
                 android:textColor="@color/black"
                 android:textSize="30sp"
                 android:textStyle="bold" />
@@ -61,10 +62,10 @@
             android:layout_marginTop="10dp"
             android:layout_marginEnd="30dp"
             android:layout_marginRight="30dp"
+            android:backgroundTint="#DA8708"
             android:ems="10"
             android:hint="Telefono"
-            android:inputType="textPersonName"
-            android:backgroundTint="#DA8708" />
+            android:inputType="textPersonName" />
 
         <EditText
             android:id="@+id/edtMailShow"
@@ -75,10 +76,10 @@
             android:layout_marginTop="10dp"
             android:layout_marginEnd="30dp"
             android:layout_marginRight="30dp"
+            android:backgroundTint="#DA8708"
             android:ems="10"
             android:hint="E-mail"
-            android:inputType="textPersonName"
-            android:backgroundTint="#DA8708" />
+            android:inputType="textPersonName" />
 
         <Button
             android:id="@+id/btnSave"
@@ -91,5 +92,6 @@
             android:layout_marginRight="20dp"
             android:text="GUARDAR"
             app:backgroundTint="#DA8708" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

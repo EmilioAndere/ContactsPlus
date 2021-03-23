@@ -136,6 +136,7 @@ public class MainActivity extends AppCompatActivity {
                                                     actionsContact.putExtra("name", contactoact.getString(1));
                                                     actionsContact.putExtra("phone", contactoact.getString(2));
                                                     actionsContact.putExtra("mail", contactoact.getString(3));
+                                                    actionsContact.putExtra("contact", contactoact.getString(0));
                                                     startActivity(actionsContact);
                                                 }
                                             } catch (JSONException e) {

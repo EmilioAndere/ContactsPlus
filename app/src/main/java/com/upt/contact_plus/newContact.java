@@ -28,11 +28,11 @@ public class newContact extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_contact);
 
-        imvLogo = (ImageView) findViewById(R.id.imvLogo);
-        edtName = (EditText) findViewById(R.id.edtName);
-        edtPhone = (EditText) findViewById(R.id.edtPhone);
-        edtMail = (EditText) findViewById(R.id.edtMail);
-        btnAgregar = (Button) findViewById(R.id.btnNuevo);
+        imvLogo = (ImageView) findViewById(R.id.imvLogo2);
+        edtName = (EditText) findViewById(R.id.edtNameShow);
+        edtPhone = (EditText) findViewById(R.id.edtPhoneShow);
+        edtMail = (EditText) findViewById(R.id.edtMailShow);
+        btnAgregar = (Button) findViewById(R.id.btnSave);
 
         imvLogo.setImageDrawable(getResources().getDrawable(R.drawable.ic_upt));
 

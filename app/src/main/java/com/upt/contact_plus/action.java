@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
 import android.Manifest;
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
@@ -18,10 +19,11 @@ import android.widget.Toast;
 public class action extends AppCompatActivity {
 
     TextView txvName;
-    ImageButton btnLlamar, btnMail;
+    ImageButton btnLlamar, btnMail, btnEdit;
     String phone;
     private final int PHONE_CALL_CODE = 100;
 
+    @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,6 +56,16 @@ public class action extends AppCompatActivity {
                 Intent email = new Intent(Intent.ACTION_SENDTO, Uri.fromParts("mailto",mail, null));
                 email.putExtra(Intent.EXTRA_SUBJECT, "App Contact+ - ");
                 startActivity(Intent.createChooser(email,  "Email Nuevo"));
+            }
+        });
+
+        btnEdit = findViewById(R.id.imbShow);
+        btnEdit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                 Intent showData = new Intent(getApplicationContext(), searchContact.class);
+                 showData.putExtra("contact", getIntent().getStringExtra("contact"));
+                 startActivity(showData);
             }
         });
     }
